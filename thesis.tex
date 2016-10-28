@@ -1,0 +1,51 @@
+% arara: pdflatex
+% arara: nomencl
+% arara: bibtex
+% arara: pdflatex
+% arara: pdflatex
+\documentclass[12pt,a4paper,twoside,openright]{memoir}
+%\documentclass[12pt,twoside,openright,draft]{memoir}
+
+\include{ustawienia2}
+
+
+\begin{document}
+
+
+
+\frontmatter
+\include{front/TitlePage}
+\include{front/podziekowania}
+\include{front/dedykacja}
+\setcounter{page}{0}
+\include{front/spis_tresci}
+\include{front/rysunki}
+\include{front/tabele}
+\include{front/skroty}
+\include{front/abstrakt}
+\include{front/cel}
+
+\mainmatter
+\pagestyle{ruled}
+\OnehalfSpacing
+%\linenumbers
+\include{rozdzialy/rozdz_1}
+\include{rozdzialy/rozdz_2}
+\include{rozdzialy/rozdz_3BK}
+\include{rozdzialy/rozdz_4BK}
+\include{rozdzialy/rozdz_5BK}
+\include{rozdzialy/rozdz_6}
+
+
+\begin{appendices}
+	\include{rozdzialy/app_a}
+	\include{rozdzialy/app_b}
+\end{appendices}
+
+\backmatter
+%\include{rozdzialy/wnioski}
+\bibliographystyle{ddabbrv}%ThesisStyle
+\bibliography{library1}
+
+
+\end{document}

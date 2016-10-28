@@ -1,0 +1,246 @@
+\usepackage[utf8]{inputenc} % kodowanie polskich znaków
+\usepackage[T1]{fontenc}
+
+\usepackage{textcomp} %TRADEMARKI  I INNE SYMBOLE
+\usepackage{verbatim,amsmath,mathtools,amsfonts,amssymb,amsthm,bm}
+\usepackage[english,polish]{babel}
+
+%% Links in pdf
+\usepackage{color}
+\definecolor{linkcol}{rgb}{0,0,0.4}
+\definecolor{citecol}{rgb}{0.5,0,0}
+\usepackage[a4paper,hyperindex=true]{hyperref} %pagebackref
+
+\hypersetup
+{
+bookmarksopen=true,
+pdftitle="Modelowanie oscylacji wapniowych w komórkach eukaryotycznych",
+pdfauthor="Michał Dyzma", 
+pdfsubject="Modelowanie oscylacji wapniowych w komórkach eukaryotycznych", %subject of the document
+%pdftoolbar=false, % toolbar hidden
+pdfmenubar=true, %menubar shown
+pdfhighlight=/O, %effect of clicking on a link
+colorlinks=true, %couleurs sur les liens hypertextes
+%pdfpagemode=None, %aucun mode de page
+%pdfpagelayout=SinglePage, %ouverture en simple page
+pdffitwindow=true, %pages ouvertes entierement dans toute la fenetre
+linkcolor=linkcol, %couleur des liens hypertextes internes
+citecolor=citecol, %couleur des liens pour les citations
+urlcolor=linkcol %couleur des liens pour les url
+}
+
+%%Wyglad pdf 
+\usepackage{url}
+\usepackage{color}
+\usepackage{fix-cm}
+\usepackage{setspace}  %odstepy miedzy wierszami
+\usepackage{ae,aecompl}
+\usepackage{lipsum} %generowanie losowego tekstu
+\usepackage{titling}
+\usepackage{xcolor}
+\usepackage[version=3]{mhchem}
+\usepackage{indentfirst}
+\usepackage{lscape} %poziome strony
+\usepackage{latexsym}
+\setcounter{MaxMatrixCols}{10}
+%\usepackage{menukeys} %Sciezki dostepu z ikonami katalogow oraz ladne sekwencje klawiszy
+\usepackage{eqnarray}
+
+
+
+% Dwie kolumny w spisie treści
+%\usepackage[toc]{multitoc}
+
+%%Fancy chapter
+\usepackage{tikz}
+
+\usepackage{titlesec, blindtext}
+%\definecolor{yourcolor}{HTML}{008bb2}
+
+%styl wyswietlania tytulu rozdzialu
+\makechapterstyle{mystyle}{%
+  \chapterstyle{default}
+  \renewcommand*{\chapnumfont}{\normalfont\Huge\sffamily\bfseries}
+  \renewcommand*{\chaptitlefont}{\normalfont\huge\rmfamily\color{black}\bfseries}
+  \settowidth{\chapindent}{\chapnumfont 111}
+  \renewcommand*{\chapterheadstart}{}
+  \renewcommand*{\chapnamefont}{\hfill\color{black}\normalfont\Huge\rmfamily\bfseries}
+  \renewcommand*{\printchapternum}{%
+  \begin{tikzpicture}[baseline={([yshift=-.6ex]current bounding box.center)}]
+  \node[fill=black,circle,text=white] {\thechapter};
+  \end{tikzpicture}\\[1ex]
+  \hrule height 1.5pt}
+  \renewcommand*{\printchaptertitle}[1]{%
+    {\chaptitlefont ##1}}
+}
+
+%use new chapter style
+%\chapterstyle{mystyle}
+%\definecolor{gray75}{gray}{0.75}
+%\newcommand{\hsp}{\hspace{20pt}}
+%\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+%--------------
+%\makechapterstyle{box}{
+%  \renewcommand*{\printchaptername}{}
+%  \renewcommand*{\chapnumfont}{\normalfont\sffamily\huge\bfseries}
+%  \renewcommand*{\printchapternum}{
+%    \flushright
+%    \begin{tikzpicture}
+%      \draw[fill,color=black] (0,0) rectangle (2cm,2cm);
+%      \draw[color=white] (1cm,1cm) node { \chapnumfont\thechapter };
+%    \end{tikzpicture}
+%  }
+%  \renewcommand*{\chaptitlefont}{\normalfont\sffamily\Huge\bfseries}
+%  \renewcommand*{\printchaptertitle}[1]{\flushleft\chaptitlefont##1}
+%}
+%\chapterstyle{box}
+
+%%...tabel
+%\usepackage{tabu} %colorowe czcionki i linie w tabelach
+\usepackage{rotating} %obracabie tabel na stronie
+\usepackage{array}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\usepackage{hhline}
+\usepackage{multicol,multirow}
+\usepackage{booktabs,bigdelim,bigstrut}
+\usepackage{colortbl}
+\usepackage{longtable}
+
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+\definecolor{LimeGreen}{rgb}{0.19,0.83,0.19}
+
+%%...obrazkow
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{float}
+\usepackage[section]{placeins} %kontroluje położenie float-ów
+\usepackage{wrapfig}
+\usepackage[labelsep=quad,indention=10pt]{subfig}
+\captionsetup*[subfigure]{position=bottom}
+
+%%Formatowanie czcionek podpisow, tytułów rozdziałów etc
+%\usepackage[font=footnotesize,labelfont=bf,format=default,justification=centerlast]{caption}
+\usepackage{titlesec} %zmiana czcionek w tytule i sekcjach
+
+
+%%Listy, numerowania, numeracja wierszy
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{lineno}  % numerowanie wierszy
+\usepackage{listings}
+\usepackage{verbatim}
+
+
+%%Cytowania
+%\usepackage{cite}
+%\usepackage[nonamebreak,comma,sort,compress,square,numbers]{natbib}
+
+
+
+%%Tikz
+\usepackage{tikz}
+\usetikzlibrary{arrows,positioning,shapes,calc,matrix,shadows}
+
+
+%%Skroty i definicje, skorowidz
+\usepackage[polish,intoc]{nomencl}
+\makenomenclature
+
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % %  Definicje  % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+%%Podwojne puste strony
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside
+\ifodd\c@page
+\else\hbox{}\thispagestyle{empty}\newpage
+\if@twocolumn \hbox {}\newpage \fi \fi \fi }
+\makeatother
+
+%% Styl punktowania
+
+\newenvironment{bulletList}%
+{ \begin{list}%
+	{$\bullet$}%
+	{\setlength{\labelwidth}{25pt}%
+	 \setlength{\leftmargin}{50pt}%
+	 \setlength{\itemsep}{\parsep}}}%
+{ \end{list}}
+
+
+\usepackage{geometry}
+%\geometry{
+%a4paper,
+%total={210mm,297mm},
+%left=20mm,
+%right=20mm,
+%top=20mm,
+%bottom=20mm,
+%}
+
+%\makeatletter
+%\renewcommand*{\num@bs}{\section{\abstractname}}
+%\makeatother
+
+%****************Definicje Bogdana****************
+\def \p {\partial}
+
+\def \B   {\hfill $\Box$}
+
+
+
+\def \eps {\varepsilon}
+
+%\def \beq {\begin{equation}}
+%
+%\def \enq  {\end{equation}}
+
+\def \w {\widetilde}
+
+\def \d {\dfrac} 
+
+\newtheorem{lemma}{Lemat}
+\newtheorem{defin}{Definicja}
+% \newtheorem{lemmas}{Lemma}
+\newtheorem{assum}{{\textbf{Założenie}}}
+\newtheorem{thm}{\textbf{Twierdzenie}}
+\newtheorem{propos}{\textbf{Propozycja}}
+%\captionnamefont{\textbf{\small}}
+%\captiontitlefont{\textbf{\small}}
+
+%***************************************************
+
+\maxsecnumdepth{subsection}
+\maxtocdepth{subsubsection}
+\setlength\columnsep{.8cm}
+
+\chapterstyle{mystyle}
+
+\captionnamefont{\bfseries}
+\captiontitlefont{\bfseries}
+\addto\captionspolish{\renewcommand{\figurename}{Rycina}}
+
+
+% dzielenie wierszy
+\widowpenalty=10000
+\clubpenalty=10000 
+\brokenpenalty=10000
+\raggedbottom
+
+
+%%  Margins
+\setlrmarginsandblock{3cm}{2.5cm}{*}
+\setulmarginsandblock{2cm}{2.5cm}{*}
+\checkandfixthelayout
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+
+\makeatletter
+%\renewcommand*{\l@chapter}[2]{%
+%	\l@chapapp{\makebox[7em][l]{\hfill\chaptername~}#1}{#2}{\cftchaptername}}
+\renewcommand*{\l@appendix}[2]{%
+	\l@chapapp{\makebox[4em][l]{\hfill\appendixname~}#1}{#2}{\cftappendixname}}
+\makeatother

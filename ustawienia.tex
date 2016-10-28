@@ -1,0 +1,137 @@
+\usepackage[utf8]{inputenc} % kodowanie polskich znaków
+\usepackage[T1]{fontenc}
+
+\usepackage{textcomp} %TRADEMARKI  I INNE SYMBOLE
+\usepackage{verbatim,amsmath,amsfonts,amssymb,amsthm}
+\usepackage[english,polish]{babel}
+%
+%
+%%Wyglad pdf 
+\usepackage{url}
+\usepackage{color}
+\usepackage{fix-cm}
+\usepackage{setspace}  %odstepy miedzy wierszami
+\usepackage{ae,aecompl}
+\usepackage{lipsum} %generowanie losowego tekstu
+\usepackage{titling}
+\usepackage{xcolor}
+\usepackage[version=3]{mhchem}
+%\usepackage{pdflscape} %odwracanie stron w pdf
+%\usepackage{lscape} %odwracanie stron
+%%\usepackage{draftwatermark} %znak wodny [firstpage] ustawienia na koncu pliku
+
+
+%...tabel
+\usepackage{rotating} %obracabie tabel na stronie
+\usepackage{array}
+\usepackage{hhline}
+\usepackage{multicol,multirow}
+\usepackage{booktabs,bigdelim,bigstrut}
+\usepackage{colortbl}
+
+%...obrazkow
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[section]{placeins} %kontroluje położenie float-ów
+\usepackage{wrapfig}
+
+
+
+%Formatowanie czcionek podpisow, tytułów rozdziałów etc
+%\usepackage[font=footnotesize,labelfont=bf,format=default,justification=centerlast]{caption}
+\usepackage{titlesec} %zmiana czcionek w tytule i sekcjach
+
+
+%Listy, numerowania, numeracja wierszy
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{lineno}  % numerowanie wierszy
+\usepackage{listings}
+\usepackage{verbatim}
+
+%Cytowania
+%%\usepackage{cite}ków sto
+\usepackage[nonamebreak]{natbib}
+
+
+%% Rysowanie w LaTeXu
+%\usepackage{pgfplots}
+%\usepackage{pgf}
+%\usepackage{tikz}
+%\usetikzlibrary{arrows,positioning,shapes,calc,matrix}
+
+
+% Słowniczek / lista skrótów
+\usepackage[intoc]{nomencl}
+%\makeglossary
+\renewcommand{\nomname}{Wykaz skrótów}
+
+
+
+% Styl punktowania
+
+\newenvironment{bulletList}%
+{ \begin{list}%
+	{$\bullet$}%
+	{\setlength{\labelwidth}{25pt}%
+	 \setlength{\leftmargin}{30pt}%
+	 \setlength{\itemsep}{\parsep}}}%
+{ \end{list} }
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % %% % % %  Nagłówki i stopki  % % % % % % % % % % % % %
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % %  Hiperlinki  % % % % % % % % % % % % % % % % % % % % %
+
+
+
+% Links in pdf
+\usepackage{color}
+\definecolor{linkcol}{rgb}{0,0,0.4} 
+\definecolor{citecol}{rgb}{0.5,0,0} 
+
+
+\usepackage[a4paper,hyperindex=true]{hyperref} %pagebackref
+
+\hypersetup
+{
+bookmarksopen=true,
+pdftitle="Poradnik narzędzia Bio-IT",
+pdfauthor="Michał Dyzma", 
+pdfsubject="Narzędzia Bio-IT", %subject of the document
+%pdftoolbar=false, % toolbar hidden
+pdfmenubar=true, %menubar shown
+pdfhighlight=/O, %effect of clicking on a link
+colorlinks=true, %couleurs sur les liens hypertextes
+%pdfpagemode=None, %aucun mode de page
+%pdfpagelayout=SinglePage, %ouverture en simple page
+pdffitwindow=true, %pages ouvertes entierement dans toute la fenetre
+linkcolor=linkcol, %couleur des liens hypertextes internes
+citecolor=citecol, %couleur des liens pour les citations
+urlcolor=linkcol %couleur des liens pour les url
+}
+
+
+%\usepackage{memhfixc}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % %  Definicje  % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\usepackage[hmarginratio=1:1,margin=2cm]{geometry}
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\titleformat{\section}{\large\bfseries\scshape}{\thesection}{1em}{} % ustawieniewielkosci czcionki w sekcjach i tytule
+
+\clubpenalty=10000
+\widowpenalty=10000
+%\raggedbottom
