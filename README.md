@@ -1,4 +1,4 @@
-#PhD thesis in LateX
+# PhD thesis in LateX
 
 __Author__: Michal Dyzma
 
