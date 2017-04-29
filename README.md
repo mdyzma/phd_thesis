@@ -2,9 +2,11 @@
 PhD thesis in LateX
 
 __Author__: Michal Dyzma
+
 __Title:__ Modelowanie oscylacji stężeń jonów wapniowych w komórkach eukariotycznych z uwzględnieniem obszarów bezpośredniego kontaktu pomiędzy mitochondriami a~retikulum endoplazmatycznym.
 
 __Abstract:__
+
 Przedmiotem pracy jest analiza wpływu obszarów bliskiego kontaktu pomiędzy retikulum endoplazmatycznym (ER) a mitochondriami na homeostazę wapniową w komórce. Obszary te odkryto już w latach 70-tych, jednak dopiero niedawno zostały intensywnie zbadane. Ponieważ znajdują się one na granicy mitochondria-retikulum, określa się je jako ,,mitochondria-associated ER membrane complexes'', a w literaturze naukowej stosowana jest w stosunku do nich skrótowa nazwa MAM. Badania za pomocą mikroskopii elektronowej, FRET i metod genetycznych pozwoliły na dokładne określenie struktury fizycznej oraz zidentyfikowanie komponent tworzących MAM. Odległość między błonami odgraniczającymi w powyższym kompleksie waha się od 10 - 25 nm tworząc fizyczne połączenia przypominające synapsy, umożliwiające szybsze przekazywanie jonów wapnia z ER do mitochondriów i odwrotnie. Interfejs mitochondrialno-retikularny stabilizowany jest przez szereg protein, które w większości powiązane są z głównymi elementami przewodzącymi sygnał wapniowy w tych kompartmentach, tj. receptorem IP$_3$R, pompą wapniową SERCA oraz kanałem VDAC. Szacuje się, że w 80\% przepływu jonów wapniowych pomiędzy mitochondrium a retikulum, odbywający się pośrednio przez cytozol, zachodzi poprzez obszary typu MAM. W Polsce badania nad strukturami MAM prowadzone są w Instytucie Biologii Doświadczalnej im. Nenckiego PAN przez Prof. Mariusza Więckowskiego z Pracowni Bioenergetyki i Błon Biologicznych.
 
 
