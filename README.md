@@ -1,10 +1,24 @@
-# PhD thesis in LateX
+# PhD thesis
 
+## EN
 __Author__: Michal Dyzma
 
-__Title:__ Modelowanie oscylacji stężeń jonów wapniowych w komórkach eukariotycznych z uwzględnieniem obszarów bezpośredniego kontaktu pomiędzy mitochondriami a~retikulum endoplazmatycznym.
+__Title:__ Model of oscilations in calcium ions concentration in eukaryotic cells with reticulo - mitochondrial microdomains creating direct interfaces between them.
 
 __Abstract:__
+
+Mitochondria not only govern energy production, but are also involved in crucial cellular signalling processes. They are one of the most important organelles  determining the Ca2+ regulatory pathway in the cell. Several mathematical models explaining these mechanisms were constructed, but only few of them describe interplay between calcium concentrations in endoplasmic reticulum (ER), cytoplasm and mitochondria. Experiments measuring calcium concentrations in mitochondria and ER suggested the existence of cytosolic microdomains with locally elevated calcium concentration in the nearest vicinity of the outer mitochondrial membrane. These intermediate physical connections between ER and mitochondria are called MAM (mitochondria-associated ER membrane) complexes. I propose a model with a direct calcium flow from ER to mitochondria, which may be justified by the existence of MAMs, and perform detailed numerical analysis of the effect of this flow on the type and shape of calcium
+oscillations. The model is partially based on the Marhl et al model with alternative approach to the mitochondrial calcium dynamics. In this approach, I divide the calcium influx to mitochondria into two parts: flux through mitochondrial calcium uniporters (MCU) located in MAMs (JMAM) sensing elevated Ca2+ concentration (assumed to be equal to that in ER), and flux through uniporters located outside MAMs (Jin) sensing bulk cytosolic calcium concentration. Moreover, I consider the uniporter working in two modes: standard uniporter mode, described by the Hill function with a Hill coefficient equal to 2, and RaM mode - modeled by the Hill function with a high Hill coefficient.  Model is composed of a system of ODEs to describing the evolution of calcium concentrations in different cellular compartments. Numerical experiments show that stable oscillations exist for a considerable set of parameter values. However, for some parameter sets the oscillations disappear and the trajectories of the model tend to a steady state with very high calcium level in mitochondria. One can hypothesize that the increase of parameter kMAM (which in this model defines the strength of calcium flux from ER to mirochondria) may be related to the cellular stress. This can be interpreted as mechanizm described as "mitochondria swelling", which is considered an early step in the apoptotic pathway.
+
+
+
+## PL
+
+__Autor__: Michal Dyzma
+
+__Tytul:__ Modelowanie oscylacji stężeń jonów wapniowych w komórkach eukariotycznych z uwzględnieniem obszarów bezpośredniego kontaktu pomiędzy mitochondriami a~retikulum endoplazmatycznym.
+
+__Abstrakt:__
 
 Przedmiotem pracy jest analiza wpływu obszarów bliskiego kontaktu pomiędzy retikulum endoplazmatycznym (ER) a mitochondriami na homeostazę wapniową w komórce. Obszary te odkryto już w latach 70-tych, jednak dopiero niedawno zostały intensywnie zbadane. Ponieważ znajdują się one na granicy mitochondria-retikulum, określa się je jako ,,mitochondria-associated ER membrane complexes'', a w literaturze naukowej stosowana jest w stosunku do nich skrótowa nazwa MAM. Badania za pomocą mikroskopii elektronowej, FRET i metod genetycznych pozwoliły na dokładne określenie struktury fizycznej oraz zidentyfikowanie komponent tworzących MAM. Odległość między błonami odgraniczającymi w powyższym kompleksie waha się od 10 - 25 nm tworząc fizyczne połączenia przypominające synapsy, umożliwiające szybsze przekazywanie jonów wapnia z ER do mitochondriów i odwrotnie. Interfejs mitochondrialno-retikularny stabilizowany jest przez szereg protein, które w większości powiązane są z głównymi elementami przewodzącymi sygnał wapniowy w tych kompartmentach, tj. receptorem IP$_3$R, pompą wapniową SERCA oraz kanałem VDAC. Szacuje się, że w 80\% przepływu jonów wapniowych pomiędzy mitochondrium a retikulum, odbywający się pośrednio przez cytozol, zachodzi poprzez obszary typu MAM. W Polsce badania nad strukturami MAM prowadzone są w Instytucie Biologii Doświadczalnej im. Nenckiego PAN przez Prof. Mariusza Więckowskiego z Pracowni Bioenergetyki i Błon Biologicznych.
 
